@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Quicksand';
 }
 
 /* from Bulma */
@@ -20,14 +20,14 @@ body {
 }
 
 .logo-font {
-    text-transform: uppercase;
+    font-family: Great Vibes, sans-serif;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
-.shop-now-button {
+.shop-now-btn {
     background: black;
     color: white;
     min-width: 260px;
@@ -38,9 +38,9 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.shop-now-btn:hover,
+.shop-now-btn:active,
+.shop-now-btn:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
