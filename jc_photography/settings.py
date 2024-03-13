@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-treggs1-p4djangoproject-v5mgh3ii98u.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['8000-treggs1-p4djangoproject-v5mgh3ii98u.ws-eu109.gitpod.io']
 
 
 # Application definition
