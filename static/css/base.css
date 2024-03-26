@@ -89,3 +89,14 @@ body {
         padding-top: 164px;
     }
 }
+
+/* add padding to top on mobile so content is not behind header */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
