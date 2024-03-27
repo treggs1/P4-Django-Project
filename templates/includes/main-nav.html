@@ -19,10 +19,10 @@
                 Categories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="categories-link">
-                <a href="" class="dropdown-item">Sky &amp; Sunsets</a>
-                <a href="" class="dropdown-item">Beaches</a>
-                <a href="" class="dropdown-item">Architechture</a>
-                <a href="" class="dropdown-item">Landscapes</a>
+                <a href="{% url 'products' %}?category=sky_sunsets" class="dropdown-item">Sky &amp; Sunsets</a>
+                <a href="{% url 'products' %}?category=beaches" class="dropdown-item">Beaches</a>
+                <a href="{% url 'products' %}?category=architechture" class="dropdown-item">Architechture</a>
+                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item">Landscapes</a>
             </div>
         </li>
 
@@ -32,9 +32,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Latest Images</a>
-                <a href="" class="dropdown-item">Special Offers</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=latest_images" class="dropdown-item">Latest Images</a>
+                <a href="{% url 'products' %}?category=special_offers" class="dropdown-item">Special Offers</a>
+                <a href="{% url 'products' %}?category=latest_images,special_offers" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
