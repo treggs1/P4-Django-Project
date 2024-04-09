@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'True'
 
 ALLOWED_HOSTS = ['jc-photography-8161a9b140c8.herokuapp.com', 'localhost']
 
@@ -222,4 +222,3 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'jcphotography@example.com'
 
-CSRF_TRUSTED_ORIGINS = ['http://jc-photography-8161a9b140c8.herokuapp.com/*', 'https://jc-photography-8161a9b140c8.herokuapp.com/*']
