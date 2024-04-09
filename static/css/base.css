@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Quicksand';
+    position: relative;
 }
 
 /* from Bulma */
@@ -19,12 +20,25 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
+.main-logo-font {
     font-family: Great Vibes, sans-serif;
+}
+
+.logo-font {
+    font-family: Gruppo, sans-serif;
 }
 
 .main-logo-link {
     width: fit-content;
+}
+
+.del-banner {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.hero-overlay {
+    background-color: rgba(222, 222, 222, 0.3);
 }
 
 .shop-now-btn {
