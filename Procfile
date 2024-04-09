@@ -1,0 +1,1 @@
+web: gunicorn jc_photography.wsgi:application
