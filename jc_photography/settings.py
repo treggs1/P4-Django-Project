@@ -122,8 +122,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 WSGI_APPLICATION = 'jc_photography.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*']
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -223,3 +221,5 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'jcphotography@example.com'
+
+CSRF_TRUSTED_ORIGINS = ['http://jc-photography-8161a9b140c8.herokuapp.com/*', 'https://jc-photography-8161a9b140c8.herokuapp.com/*']
