@@ -5,7 +5,7 @@ This is an e-commerce platform dedicated to Justin Cooper Photography. It enable
 
 ## UX
 
-RefArchive is designed for accessibility and ease of use, it has a clean layout with a simple colour palette.
+Justin Cooper Photography is designed for accessibility and ease of use, it has a clean layout with a simple colour palette.
 
 ### Colour Scheme
 
@@ -18,27 +18,15 @@ Fonts are from Google Fonts.
 Great Vibes - used for main site logo.
 Gruppo - used for site headings.
 Quicksand - used for all other text on the site.
+
 ## User Stories
 
 - As a new site user, I would like to easily browse through different categories of prints offered by Justin Cooper Photography, allowing me to quickly find what I'm interested in.
 - As a new site user, I would like to have a straightforward registration process that enables me to create an account efficiently, ensuring I can easily track my orders and access my purchase history.
 - As a new site user, I would like to have clear and intuitive navigation menus that help me explore the website effortlessly, making it convenient to find the information I need.
-- As a new site user, I would like to have access to detailed product descriptions and high-quality images for each print, enabling me to make informed purchasing decisions.
-- As a new site user, I would like to have a seamless checkout experience, ensuring a smooth and secure transaction process.
-## Wireframes
+- As a site user, I would like to have access to detailed product descriptions and high-quality images for each print, enabling me to make informed purchasing decisions.
+- As a site user, I would like to have a seamless checkout experience, ensuring a smooth and secure transaction process.
 
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
-
-### Wireframes
-
-| Device | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/p3-mobile.png) |
-| Desktop/Tablet | ![screenshot](documentation/wireframes/p3-desktop.png) |
-
-## Existing Features
-
-add here
 
 ## Tools & Technologies Used
 
@@ -55,7 +43,8 @@ add here
 - [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML.
 - [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS.
 - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://ref-archive-b7110f3b2973.herokuapp.com) - used to create AmIResponsive image for README.md
-- [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning.
+
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -120,3 +109,7 @@ You can fork this repository by using the following steps:
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://readme.so/) | README and TESTING | tool to help generate the Markdown files | 
+
+All images were supplied by Justin Cooper.
+
+All JavaScript was coppied from the Boutique Ado Project and most of the CSS.
