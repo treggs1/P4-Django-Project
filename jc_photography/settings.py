@@ -122,6 +122,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 WSGI_APPLICATION = 'jc_photography.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*']
+
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -187,7 +189,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'jc-photography'
     AWS_S3_REGION_NAME = 'eu-west-1'
