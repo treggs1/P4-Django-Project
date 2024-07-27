@@ -101,6 +101,46 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h2 class="text-xl">Reviews</h2>
+
+                {% if request.user.is_authenticated %}
+                <form method="post" action=".">
+                    {% csrf_token %}
+
+                    <div>
+                        <label for="rating">Rating</label><br>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="comment">Comment</label><br>
+                        <textarea name="comment"></textarea>
+                    </div>
+
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                </form>
+                {% endif %}
+
+                {% for review in product.reviews.all %}
+                    <div>
+                        <strong>Rating: </strong><small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small><br>
+                        <strong>Comment</strong><br>
+                        {{ review.comment }}
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
     </div>
 {% endblock %}
 

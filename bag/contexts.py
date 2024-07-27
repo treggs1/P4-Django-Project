@@ -2,9 +2,9 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from coupons.models import Coupon
 
 def bag_contents(request):
-
     bag_items = []
     total = 0
     product_count = 0
@@ -32,15 +32,25 @@ def bag_contents(request):
                     'size': size,
                 })
 
+    # Apply coupon discount as percentage if a coupon is applied
+    coupon_code = request.session.get('coupon_code')
+    if coupon_code:
+        try:
+            coupon = Coupon.objects.get(code=coupon_code)
+            if coupon.is_active():
+                total -= (coupon.discount / 100) * total
+        except Coupon.DoesNotExist:
+            pass
+
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'bag_items': bag_items,
         'total': total,
