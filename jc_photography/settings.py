@@ -29,8 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['jc-photography-8161a9b140c8.herokuapp.com', '8000-treggs1-p4djangoproject-cbj22o86uub.ws-eu115.gitpod.io', 'localhost']
 
