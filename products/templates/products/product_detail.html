@@ -129,6 +129,11 @@
                         <button class="btn btn-black rounded-0 text-uppercase">Submit</button>
                     </div><br>
                 </form>
+                {% else %}
+                <div>
+                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                    <a class="text-info" href="{% url 'account_login' %}">login</a> to leave a review.
+                </div>
                 {% endif %}
 
                 {% for review in product.reviews.all %}
